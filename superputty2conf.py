@@ -73,7 +73,7 @@ for s in sessions:
     logger.debug("session xml: \"{}\"".format(str(s)))
     host_str = re.sub('[^0-9a-zA-Z]+', '_', s['SessionName']).lower()
     host_str = re.sub('_+]', "_", host_str)
-    host_name_str = s['SessionName']
+    host_name_str = s['Host']
     user_str = s['Username']
     extra_args_str = s['ExtraArgs']
 
